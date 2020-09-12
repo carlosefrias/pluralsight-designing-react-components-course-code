@@ -1,5 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const Menu = () => <img src="images/menu.png" />
+const Menu = () => <img src="images/menu.gif" alt="menu" />;
 
-export default Menu
+export default Menu;

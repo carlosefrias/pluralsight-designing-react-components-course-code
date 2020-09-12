@@ -1,8 +1,10 @@
-function Page(){
-    return (
-        <div>
-            <h1>Hello from Pluralsight</h1>
-        </div>
-    )
+import React from 'react';
+
+function Page() {
+  return (
+    <div>
+      <h1>Hello from Pluralsight</h1>
+    </div>
+  );
 }
-export default Page
+export default Page;

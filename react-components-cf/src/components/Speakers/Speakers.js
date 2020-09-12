@@ -1,12 +1,15 @@
 import React from 'react';
-import withData from './withData';
+import SpeakersRenderProps from './SpeakersRenderProps';
 
-const Speakers = ({ speakers }) => (
-  <div>
-    {speakers.map(({ imageSrc, name }) => (
-      <img src={`/images/${imageSrc}.png`} alt={name} key={imageSrc} />
-    ))}
-  </div>
+const Speakers = () => (
+  <SpeakersRenderProps>
+    {({ speakers }) => (
+      <div>
+        {speakers.map(({ imageSrc, name }) => (
+          <img src={`/images/${imageSrc}.png`} alt={name} key={imageSrc} />
+        ))}
+      </div>
+    )}
+  </SpeakersRenderProps>
 );
-const maxSpeakersToShow = 2;
-export default withData(maxSpeakersToShow)(Speakers);
+export default Speakers;
